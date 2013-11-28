@@ -1,0 +1,39 @@
+// ComSample.idl : IDL source for ComSample
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ComSample.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(515754AD-E9EC-460A-B88E-02359839F0D8),
+	dual,
+	nonextensible,
+	helpstring("ISampleObject Interface"),
+	pointer_default(unique)
+]
+interface ISampleObject : IDispatch{
+    [propget, id(1), helpstring("property ObjectName")] HRESULT ObjectName([out, retval] BSTR* pVal);
+    [propput, id(1), helpstring("property ObjectName")] HRESULT ObjectName([in] BSTR newVal);
+    [id(2), helpstring("method DoWork")] HRESULT DoWork(LONG arg1, LONG arg2, LONG* result);
+};
+[
+	uuid(802C9F39-AB62-4C03-A1BB-D2689DD7CCFA),
+	version(1.0),
+	helpstring("ComSample 1.0 Type Library")
+]
+library ComSampleLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(6F3A4816-5F14-42F0-BFF7-65F0664A9BC3),
+		helpstring("SampleObject Class")
+	]
+	coclass SampleObject
+	{
+		[default] interface ISampleObject;
+	};
+};
