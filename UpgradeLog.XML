@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ComIntercept">
+</Property><Property Name="解决方案文件" Value="D:\code\ComSample_18\ComIntercept.sln">
+</Property><Property Name="Date" Value="2013年11月28日">
+</Property><Property Name="Time" Value="15:12">
+</Property></Properties><Event ErrorLevel="0" Project="mhook-lib" Source="src\mhook\mhook-lib\mhook-lib.vcproj" Description="Converting project file 'D:\code\ComSample_18\src\mhook\mhook-lib\mhook-lib.vcproj'.">
+</Event><Event ErrorLevel="1" Project="mhook-lib" Source="src\mhook\mhook-lib\mhook-lib.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="mhook-lib" Source="src\mhook\mhook-lib\mhook-lib.vcproj" Description="Done converting to new project file 'D:\code\ComSample_18\src\mhook\mhook-lib\mhook-lib.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="mhook-lib" Source="src\mhook\mhook-lib\mhook-lib.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="disasm-lib" Source="src\mhook\disasm-lib\disasm-lib.vcproj" Description="Converting project file 'D:\code\ComSample_18\src\mhook\disasm-lib\disasm-lib.vcproj'.">
+</Event><Event ErrorLevel="1" Project="disasm-lib" Source="src\mhook\disasm-lib\disasm-lib.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="disasm-lib" Source="src\mhook\disasm-lib\disasm-lib.vcproj" Description="Done converting to new project file 'D:\code\ComSample_18\src\mhook\disasm-lib\disasm-lib.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="disasm-lib" Source="src\mhook\disasm-lib\disasm-lib.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ComSample" Source="src\ComSample\ComSample.vcproj" Description="Converting project file 'D:\code\ComSample_18\src\ComSample\ComSample.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ComSample" Source="src\ComSample\ComSample.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="ComSample" Source="src\ComSample\ComSample.vcproj" Description="Done converting to new project file 'D:\code\ComSample_18\src\ComSample\ComSample.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ComSample" Source="src\ComSample\ComSample.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ComSampleClient" Source="src\ComSampleClient\ComSampleClient.vcproj" Description="Converting project file 'D:\code\ComSample_18\src\ComSampleClient\ComSampleClient.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ComSampleClient" Source="src\ComSampleClient\ComSampleClient.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="ComSampleClient" Source="src\ComSampleClient\ComSampleClient.vcproj" Description="Done converting to new project file 'D:\code\ComSample_18\src\ComSampleClient\ComSampleClient.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ComSampleClient" Source="src\ComSampleClient\ComSampleClient.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ComInterceptProxyObj" Source="src\ComInterceptProxyObj\ComInterceptProxyObj.vcproj" Description="Converting project file 'D:\code\ComSample_18\src\ComInterceptProxyObj\ComInterceptProxyObj.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ComInterceptProxyObj" Source="src\ComInterceptProxyObj\ComInterceptProxyObj.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="ComInterceptProxyObj" Source="src\ComInterceptProxyObj\ComInterceptProxyObj.vcproj" Description="Done converting to new project file 'D:\code\ComSample_18\src\ComInterceptProxyObj\ComInterceptProxyObj.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ComInterceptProxyObj" Source="src\ComInterceptProxyObj\ComInterceptProxyObj.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ComInterceptVtablePatch" Source="src\ComInterceptVtablePatch\ComInterceptVtablePatch.vcproj" Description="Converting project file 'D:\code\ComSample_18\src\ComInterceptVtablePatch\ComInterceptVtablePatch.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ComInterceptVtablePatch" Source="src\ComInterceptVtablePatch\ComInterceptVtablePatch.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="ComInterceptVtablePatch" Source="src\ComInterceptVtablePatch\ComInterceptVtablePatch.vcproj" Description="Done converting to new project file 'D:\code\ComSample_18\src\ComInterceptVtablePatch\ComInterceptVtablePatch.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ComInterceptVtablePatch" Source="src\ComInterceptVtablePatch\ComInterceptVtablePatch.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ComIntercept.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="ComIntercept.sln" Description="Converted">
+</Event></UpgradeLog>

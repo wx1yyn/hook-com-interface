@@ -1,25 +1,17 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mhook-lib", "src\mhook\mhook-lib\mhook-lib.vcproj", "{4AC0EBA6-695B-4E8D-A04F-8B336D652316}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mhook-lib", "src\mhook\mhook-lib\mhook-lib.vcxproj", "{4AC0EBA6-695B-4E8D-A04F-8B336D652316}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "disasm-lib", "src\mhook\disasm-lib\disasm-lib.vcproj", "{D89FB8AB-69A4-4F89-BB97-22D43A9930F0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "disasm-lib", "src\mhook\disasm-lib\disasm-lib.vcxproj", "{D89FB8AB-69A4-4F89-BB97-22D43A9930F0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComSample", "src\ComSample\ComSample.vcproj", "{34E203F2-A503-4EC0-9B34-18275D717D29}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComSample", "src\ComSample\ComSample.vcxproj", "{34E203F2-A503-4EC0-9B34-18275D717D29}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComSampleClient", "src\ComSampleClient\ComSampleClient.vcproj", "{B68466EE-50FE-4720-8926-037F9AB18229}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComSampleClient", "src\ComSampleClient\ComSampleClient.vcxproj", "{B68466EE-50FE-4720-8926-037F9AB18229}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComInterceptProxyObj", "src\ComInterceptProxyObj\ComInterceptProxyObj.vcproj", "{87BC76E1-C9E4-4092-8424-665A45328268}"
-	ProjectSection(ProjectDependencies) = postProject
-		{4AC0EBA6-695B-4E8D-A04F-8B336D652316} = {4AC0EBA6-695B-4E8D-A04F-8B336D652316}
-		{D89FB8AB-69A4-4F89-BB97-22D43A9930F0} = {D89FB8AB-69A4-4F89-BB97-22D43A9930F0}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComInterceptProxyObj", "src\ComInterceptProxyObj\ComInterceptProxyObj.vcxproj", "{87BC76E1-C9E4-4092-8424-665A45328268}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComInterceptVtablePatch", "src\ComInterceptVtablePatch\ComInterceptVtablePatch.vcproj", "{EF93BE12-3305-4738-877B-C8C9AB9BDBAF}"
-	ProjectSection(ProjectDependencies) = postProject
-		{4AC0EBA6-695B-4E8D-A04F-8B336D652316} = {4AC0EBA6-695B-4E8D-A04F-8B336D652316}
-		{D89FB8AB-69A4-4F89-BB97-22D43A9930F0} = {D89FB8AB-69A4-4F89-BB97-22D43A9930F0}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComInterceptVtablePatch", "src\ComInterceptVtablePatch\ComInterceptVtablePatch.vcxproj", "{EF93BE12-3305-4738-877B-C8C9AB9BDBAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

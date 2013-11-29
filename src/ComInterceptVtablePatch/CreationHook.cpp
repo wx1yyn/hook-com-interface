@@ -1,24 +1,24 @@
 #include "StdAfx.h"
 #include "CreationHook.h"
 
-#include "Factory.h"
+//#include "Factory.h"
 #include "VtableHooks.h"
 
 //////////////////////////////////////////////////////////////////////////
 
 typedef HRESULT (WINAPI *CoCreateInstance_T)(REFCLSID, LPUNKNOWN, DWORD, REFIID, LPVOID*);
-typedef HRESULT (WINAPI *CoGetClassObject_T)(REFCLSID rclsid, DWORD dwClsContext, COSERVERINFO *pServerInfo, REFIID riid, LPVOID *ppv);
+//typedef HRESULT (WINAPI *CoGetClassObject_T)(REFCLSID rclsid, DWORD dwClsContext, COSERVERINFO *pServerInfo, REFIID riid, LPVOID *ppv);
 
 namespace Original
 {
     CoCreateInstance_T  CoCreateInstance    = NULL;
-    CoGetClassObject_T  CoGetClassObject    = NULL;
+    //CoGetClassObject_T  CoGetClassObject    = NULL;
 }
 
 namespace Hook
 {
     HRESULT WINAPI CoCreateInstance(REFCLSID rclsid, LPUNKNOWN pUnkOuter, DWORD dwClsContext, REFIID riid, LPVOID* ppv);
-    HRESULT WINAPI CoGetClassObject(REFCLSID rclsid, DWORD dwClsContext, COSERVERINFO *pServerInfo, REFIID riid, LPVOID *ppv);
+    //HRESULT WINAPI CoGetClassObject(REFCLSID rclsid, DWORD dwClsContext, COSERVERINFO *pServerInfo, REFIID riid, LPVOID *ppv);
 };
 
 //////////////////////////////////////////////////////////////////////////
@@ -33,8 +33,8 @@ struct FunctionInfo
 
 FunctionInfo g_Functions[] = 
 {
-    {"ole32.dll", "CoCreateInstance", (void**)&Original::CoCreateInstance, (void*)Hook::CoCreateInstance},
-    {"ole32.dll", "CoGetClassObject", (void**)&Original::CoGetClassObject, (void*)Hook::CoGetClassObject}
+    {"ole32.dll", "CoCreateInstance", (void**)&Original::CoCreateInstance, (void*)Hook::CoCreateInstance}
+    //{"ole32.dll", "CoGetClassObject", (void**)&Original::CoGetClassObject, (void*)Hook::CoGetClassObject}
 };
 
 const size_t g_FunctionsCount = sizeof(g_Functions)/sizeof(FunctionInfo);
@@ -58,20 +58,20 @@ HRESULT WINAPI Hook::CoCreateInstance(REFCLSID rclsid, LPUNKNOWN pUnkOuter, DWOR
     return Original::CoCreateInstance(rclsid, pUnkOuter, dwClsContext, riid, ppv);
 }
 
-HRESULT WINAPI Hook::CoGetClassObject(REFCLSID rclsid, DWORD dwClsContext, COSERVERINFO *pServerInfo, REFIID riid, LPVOID *ppv)
-{
-    if (riid == IID_IClassFactory)
-    {
-        ATL::CComPtr<IClassFactory> originalFactory;
-        HRESULT hr = Original::CoGetClassObject(rclsid, dwClsContext, pServerInfo, riid, (void**)&originalFactory);
-        if (FAILED(hr))
-            return hr;
-
-        return CSampleObjectProxyFactory::CreateFactory(originalFactory, ppv);
-    }
-
-    return Original::CoGetClassObject(rclsid, dwClsContext, pServerInfo, riid, ppv);
-}
+//HRESULT WINAPI Hook::CoGetClassObject(REFCLSID rclsid, DWORD dwClsContext, COSERVERINFO *pServerInfo, REFIID riid, LPVOID *ppv)
+//{
+//    if (riid == IID_IClassFactory)
+//    {
+//        ATL::CComPtr<IClassFactory> originalFactory;
+//        HRESULT hr = Original::CoGetClassObject(rclsid, dwClsContext, pServerInfo, riid, (void**)&originalFactory);
+//        if (FAILED(hr))
+//            return hr;
+//
+//        return CSampleObjectProxyFactory::CreateFactory(originalFactory, ppv);
+//    }
+//
+//    return Original::CoGetClassObject(rclsid, dwClsContext, pServerInfo, riid, ppv);
+//}
 
 //////////////////////////////////////////////////////////////////////////
 
