@@ -6,4 +6,4 @@
 
 #include <atlbase.h>
 
-#include "ComSample_i.h"
+//#include "ComSample_i.h"

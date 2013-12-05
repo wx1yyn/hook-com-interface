@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include <WinError.h>
 
 #include "ComSample_i.h"
 #include "ComSample_i.c"
@@ -21,9 +22,16 @@ void CallSampleObject()
 
 int main(int argc, char* argv[])
 {
+	//loadlib
+	//DWORD dwError = NO_ERROR;
+	//HINSTANCE hInst;
+	//hInst=LoadLibrary(TEXT("./ComInterceptVtablePatch.dll"));
+	//dwError = GetLastError();
+	printf("xxxxx\n");
     CoInitialize(NULL);
     CallSampleObject();
     CoUninitialize();
+	getchar();
 
     return 0;
 }

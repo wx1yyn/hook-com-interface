@@ -1,3 +1,3 @@
 #pragma once
 
-HRESULT InstallComInterfaceHooks(IUnknown* originalInterface);
+HRESULT InstallComInterfaceHooks(IUnknown* originalInterface, REFIID riid);

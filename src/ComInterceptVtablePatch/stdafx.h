@@ -10,5 +10,7 @@
 #include <vector>
 
 #include "mhook-lib/mhook.h"
-
-#include "ComSample_i.h"
+#include <Audioclient.h>
+#include <Unknwn.h>
+#include <Mmdeviceapi.h>
+//#include "ComSample_i.h"
